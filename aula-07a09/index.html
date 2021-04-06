@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="./node_modules/nes.css/css/nes.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://unpkg.com/nes.css/css/nes-core.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        html, body, pre, code, kbd, samp {
+            font-family: "Press Start 2P";
+        }
+      </style>
+    <title>
+        Imersão Dev - Aula 07
+    </title>
+</head>
+<body>
+    <div class="container">
+        <img src="https://i.imgur.com/XaBur4c.png" class="page-logo" alt="">
+        <h1 class="page-title">Super Trunfo</h1>
+
+        <button type="button" class="nes-btn" id="btnSortear" onclick="sortearCarta()">Sortear Carta</button>
+        
+        <form id="form">
+            <h2>Escolha o seu atributo</h2>
+            <div class="wrapper">
+                <div id="placar"></div>
+                <div id="quantidade-cartas"></div>
+                <div id="cartas">
+                    <div id="carta-jogador" class="carta"></div>
+                    <div id="carta-maquina" class="carta"></div>
+                </div>
+                <button type="button" class="nes-btn" id="btnJogar" onclick="jogar()" disabled="false">Jogar</button>
+            </div>
+            <div id="resultado"></div>
+            <button type="button" class ="nes-btn" id="btnProximaRodada" onclick="proximaRodada()" disabled="true">Proxima rodada</button>  
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
